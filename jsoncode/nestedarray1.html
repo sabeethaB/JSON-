@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+var myObj, i, j, x = "";
+myObj = {
+    "name":"John",
+    "age":30,
+    "workers": [
+        {"name":"sabeetha", "known":["html", "css", "javascript"]},
+        {"name":"deepa", "known":["html", "css", "javascript"]},
+        {"name":"kiri", "known":["html", "css", "javascript"] }
+    ]
+}
+for (i in myObj.workers) 
+{
+    x += "<h2>" + myObj.workers[i].name + "</h2>";
+    for (j in myObj.workers[i].known) 
+    {
+        x += myObj.workers[i].known[j] + "<br>";
+    }
+}
+
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>

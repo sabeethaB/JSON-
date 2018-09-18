@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Retrieving data</title>
+</head>
+<body>
+<p id="example"></p>
+<script>
+var myjson='{"name":"sabeetha","city":"karur","age":21}';
+var myobj=JSON.parse(myjson);
+document.getElementById("example").innerHTML=myobj.name+"<br>"+myobj.city;	
+</script>
+</body>
+</html>

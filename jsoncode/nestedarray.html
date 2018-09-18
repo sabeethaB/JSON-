@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+var myObj = {
+  "name":"John",
+  "age":30,
+  "city": {
+    "city1":"karur",
+    "city2":"chennai",
+    "city3":"erode"
+  }
+}
+document.getElementById("demo").innerHTML += myObj.city.city3 + "<br>";
+</script>
+
+</body>
+</html>
